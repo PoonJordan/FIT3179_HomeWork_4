@@ -8,23 +8,31 @@
   
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-  <h1>FIT 3179 Homework 3</h1>
+  <h1>FIT 3179 Homework 4</h1>
   <p>Jordan Poon Kee Liang
     30883679
   </p>
 
 </head>
+
 <body>
-  
-<div id="choropleth_map"></div>
+  <div id="choropleth_map"></div>
+  <div id="bar_chart"></div>
 
-<script type="text/javascript">
+  <script>
+      var spec1 = "js/choropleth_map.json";
+          vegaEmbed('#choropleth_map', spec1)
+          .then(function(result) {
+              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          })
+          .catch(console.error);
 
-  var spec2 = "js/choropleth_map.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
-
+      var spec2 = "js/bar_chart.json";
+          vegaEmbed('#bar_chart', spec2)
+          .then(function(result) {
+              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          })
+          .catch(console.error);
+  </script>
 </body>
 </html>
