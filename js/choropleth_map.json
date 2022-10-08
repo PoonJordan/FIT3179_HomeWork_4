@@ -522,7 +522,7 @@
             "color": {"value": "black"},
             "opacity": {
               "condition": {
-                "test": "datum['Entity'] == 'Russia' || datum['Entity'] == 'Australia' || datum['Entity'] == 'New Zealand' || datum['Entity'] == 'Italy' || datum['Entity'] == 'Yemen' || datum['Entity'] == 'United States of America'",
+                "test": "datum['Entity'] == 'Russia' || datum['Entity'] == 'China' ||  datum['Entity'] == 'Australia' || datum['Entity'] == 'New Zealand' || datum['Entity'] == 'Italy' || datum['Entity'] == 'Yemen' || datum['Entity'] == 'United States of America'",
                 "value": 1
               },
               "value": 0
