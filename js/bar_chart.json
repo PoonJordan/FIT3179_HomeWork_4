@@ -7,11 +7,11 @@
     "width": 600,
     "height": 500,
     "mark": "bar",
-    "title": "Top 5 countries in SEA Deaths Cause By Air Pollution ",
+    "title": "Top 5 countries in SEA Deaths Cause By Indoor Air Pollution ",
     "encoding": {
         "x": {"field": "Entity", "type": "nominal", "axis": {"labelAngle": 0}, "title": "Country"},
-        "y": {"field": "Deaths_Cause_By_Air_Pollution", "type": "quantitative", "title": "Deaths Cause By Air Pollution"},
-        "tooltip": {"field": "Deaths_Cause_By_Air_Pollution", "type": "quantitative"}
+        "y": {"field": "Deaths_Cause_By_Air_Pollution", "type": "quantitative", "title": "Deaths Cause By Indoor Air Pollution"},
+        "tooltip": {"field": "Deaths_Cause_By_Air_Pollution", "type": "quantitative", "title": "No. of Deaths"}
     },
     "transform": [
         {"filter": "datum.Entity == 'Indonesia' ||  datum.Entity == 'Cambodia' || datum.Entity == 'Thailand' || datum.Entity == 'Philippines' || datum.Entity == 'Vietnam' " }
